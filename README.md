@@ -1,0 +1,4 @@
+Maclaurian
+==========
+
+Maclaurian spheroid calculations.
