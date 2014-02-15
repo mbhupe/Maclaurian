@@ -28,7 +28,7 @@
 
 
 
-\title[Geometrically thin acrretion disk around white dwarfs and quark stars]{Geometrically thin acrretion disk around quark stars}
+\title[Geometrically thin acrretion disk around white dwarfs and quark stars]{Geometrically thin acrretion disk around white dwarfs and quark stars}
 \author[B. Mishra, B. Vaidya and W. Kluzniak]{B. Mishra$^{1}$\thanks{E-mail:
 mbhupe@camk.edu.pl}, W. Klu\'zniak$^{1}$, B. Vaidya$^{2}$\\
 $^{1}$Copernicus Astronomical Center, Bartycka 18, Warsaw,00-716, Poland\\
@@ -62,7 +62,20 @@ Maclaurin spheroids, white dwarfs, quark stars, accretion disk
 \item Describe in very brief the basics and how $\Omega$ is obtained
   and re-draw the plot that is in your supervisor paper. 
 \end{itemize}
-\subsection{Analytical Approach}
+In general the accretion disk has been studied for the spherical potential which corresponds to Keplerian velocity. We are using potential for the Maclaurin spheroids which corresponds to angular velocity which is non-Keplerian very close to surface of star. The detailed description of the angular velocity has been studied by Kluzniak et al 2013. The angular velocity on the equatorial plane at a radial distance $r$ from the center of Spheroidal quark star with eccentricity $e$ semi-major axis $a$ is given by Eqn.1
+\begin{figure}
+\centering
+\includegraphics[width=1\columnwidth]{\figpath/angular.eps}
+\caption{Multiplot of various quantities obtained from semi-analytical
+  work}
+\label{fig:steadyplt1}
+\end{figure}
+\begin{equation}
+\Omega ^2 \left(R\right)= 2\pi G\rho_* \frac{(1-e^2)^{1/2}}{e^3}\left[\gamma - \cos \gamma \sin\gamma \right]
+\end{equation}  
+where $\gamma = \arcsin (\frac{a e}{r})$ and $\rho *$ is density of star.
+The disk structure will be defined by the angular momentum equation (SS-1973, Eqn.(2.2)),
+\subsection{Steady thin accretion disk}
 \begin{itemize}
 \item List all the equations that you have used and what modification
   you have done for e.g., you have used $\Omega$ corresponding to
@@ -72,11 +85,65 @@ Maclaurin spheroids, white dwarfs, quark stars, accretion disk
   Explicit formulae and quantities shall be discussed in results
   section.
 \end{itemize}
-\subsection{Numerical Evolution}
+Now we can use Eqn.1 and follow exactly same steps as Shakura Sunyaev 1973, we shall arrive at three different regions of the disk. Our main concern here will be inner region, which is radiation pressure dominated region. We shall present all the equations and algebraic parameters in the second and third regions also but since we know that at large radii our results reduce to Newtonian results we shall describe inner region in more detail.
+\subsubsection{Radiation pressure dominated region}
+Shakura Sunyaev 1973 considered three different regions in the accretion disk, the inner one is radiation pressure dominated where in the interaction of matter and radiation electron scattering on free electrons has dominating contribution. Fig.x1 confirms that our results are in the region where radiation pressure is dominated over the gas pressure. We shall directly write the final form of the algebraic equations to calculate the different parameters in the disk. A detailed step by step calculation has been added in the appendix. Appendix also includes the algebraic equations for the gas pressure dominated regions.
+\begin{equation}
+z_0(r) = \frac{\sigma\rho_0\dot{M}k_1\left(p_1^{1/2}r^2 - p_2^{1/2}R_0^2\right)(ae)^3}{8\pi r^5 c \rho \Omega^2\cos\gamma(\gamma - \sin\gamma\cos\gamma)^{1/2}}.
+\end{equation}
+\begin{equation}
+\Sigma(r) = \frac{32\pi c^2\rho^2 r^8 \cos^2{\gamma}(\gamma - \sin\gamma\cos\gamma)^2}{\alpha\sigma^2\rho_0^2 k_1^{1/2}(ae)^6\dot{M}\left(p_1^{1/2}r^2 - p_2^{1/2}R_0^2\right)}.
+\end{equation}
+\begin{equation}
+\varepsilon(r) = \frac{6 r^3 c \cos\gamma(\gamma - \sin\gamma\cos\gamma)^{3/2}k_1^{1/2}}{\alpha\sigma (ae)^3}
+\end{equation}
+\begin{equation}
+T(r) = \frac{6r^3 c \cos\gamma (\gamma - \sin\gamma\cos\gamma)^{3/2}k_1^{1/2}}{b^{1/4}\alpha\sigma (ae)^3}
+\end{equation}
+\begin{equation}
+\tau (r) = \sqrt{\sigma_T(0.11 T^{-7/2}n)}\Sigma(r)
+\end{equation}
+\begin{equation}
+n(r) = \frac{\Sigma(r)}{2mpz_0(r)}
+\end{equation}
+\begin{equation}
+v_r(r) = \frac{\dot{M}}{2\pi\Sigma r}
+\end{equation}
+where, 
+\begin{equation} 
+\gamma = \arcsin(\frac{ae}{r}) 
+\end{equation}
+\begin{equation}
+\gamma_0 = \arcsin(\frac{ae}{R_0})
+\end{equation}
+\begin{equation}
+p_1 = (\gamma - \sin\gamma\cos\gamma)
+\end{equation}
+\begin{equation}
+p_2 = (\gamma_0 - \sin\gamma_0\cos\gamma_0)
+\end{equation}
+$\dot{M}$ is mass accretion rate, $z_0(r)$ is half thickness of the disk, $\Sigma(r)$ is the radial distribution of surface density, $\varepsilon(r)$ is radial distribution of energy density, $T(r)$ is radial distribution of the temperature, $\tau(r)$ is opacity, $n(r)$ is the number density and $v_r$ is the radial velocity of the matter in the steady thin accretion disk.
+\subsection{Non-stationary accretion disk}
 \begin{itemize}
 \item List formulae and refer the paper that we have been using for
   evolution of Surface density. 
 \end{itemize}
+The disk can not be stationary due to viscous forces acting to transport the angular momentum and cause the accretion of the matter. Here we numerically studied the time evolution of the thin accretion disk around quark stars. We shall integrate numerically the diffusion equation with constant viscosity. We adapted numerical scheme described in Brensteil et al 2010. For the potential we adapted from Maclaurin spheroids gives the different angular velocity profile so we shall write the diffusion equation in terms of angular velocity.
+\begin{equation}
+\frac{\partial\Sigma}{\partial t} = -\frac{1}{r}\frac{\partial}{\partial r}\left[\frac{1}{2\pi(r^2\Omega)^\prime}\frac{\partial G}{\partial r}\right]
+\end{equation}
+where,
+\begin{equation}
+G(r,t) = 2\pi r\nu\Sigma r^2 \Omega^\prime 
+\end{equation}
+Now if we choose the Keplerian angular velocity the above equations will reduce to standard diffusion equation used for study of disk evolution by various models based on $\alpha$-disk models.
+\begin{equation}
+\frac{\partial\Sigma}{\partial t} = \frac{3}{r}\frac{\partial}{\partial r}\left[r^{1/2}\frac{\partial}{\partial r}\left(\nu\Sigma r^{1/2}\right)\right]
+\end{equation}
+\begin{equation}
+v_r = -\frac{3}{\Sigma r^{1/2}}\frac{\partial}{\partial r}\left(\nu\Sigma r^{1/2}\right)
+\end{equation}
+where $\Sigma$ is the surface density, $\nu$ is kinematic viscosity.
 
 \section{Results}
 \subsection{Steady state disk}
@@ -102,6 +169,13 @@ Maclaurin spheroids, white dwarfs, quark stars, accretion disk
 \item Finally describe the spectra and state its dependence on
   eccentricity. (Explain the reason in discussion).
 \end{itemize}
+\begin{figure}
+\centering
+\includegraphics[width=1\columnwidth]{\figpath/pradpgas.eps}
+\caption{Multiplot of various quantities obtained from semi-analytical
+  work}
+\label{fig:steadyplt1}
+\end{figure}
 \subsection{Evolution of surface density}
 \begin{itemize}
 \item Show the plot of evolution of a ring of matter for a particular high
@@ -111,7 +185,18 @@ Maclaurin spheroids, white dwarfs, quark stars, accretion disk
   solution. Here also describe the plot which shows the evolution with
   different eccentricity. 
 \end{itemize}
-
+\begin{figure}
+\centering
+\includegraphics[width=1\columnwidth]{\figpath/nu1e-4.eps}
+\caption{Time evolution of the accretion disk. Higher the eccentricity slower the evolution}
+\label{fig:steadyplt1}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=1\columnwidth]{\figpath/nu1e-4_05_0001.eps}
+\caption{Time evolution of the accretion disk. Higher the eccentricity slower the evolution}
+\label{fig:steadyplt1}
+\end{figure}
 \section{Discussion}
 \subsection{Very thin and fast disk}
 \begin{itemize}
