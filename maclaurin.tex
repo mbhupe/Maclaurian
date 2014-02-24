@@ -7,7 +7,7 @@
 \author[B. Mishra, W. Klu\'zniak and B. Vaidya]{B. Mishra$^{1}$\thanks{E-mail:
 mbhupe@camk.edu.pl}, W. Klu\'zniak$^{1}$, B. Vaidya$^{2}$\\
 $^{1}$Copernicus Astronomical Center, Bartycka 18, Warsaw,00-716, Poland\\
-$^{2}$University of Leeds, Leeds LS2 9JT, United Kingdom}
+$^{2}$Dipartimento di Fisica `Amedeo Avogadro' Università degli Studi di Torino, Via Pietro Giuria 1, 10125 Torino, Italy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \date{Accepted *** Received 000}
@@ -16,7 +16,7 @@ $^{2}$University of Leeds, Leeds LS2 9JT, United Kingdom}
 \label{firstpage}
 %--------------------------------------------------------------------
 \begin{abstract}
-We studied semi-analytically and numerically the geometrically thin and optically thick accretion disk around rapidly rotating quark stars and white dwarfs using potential for Maclaurin spheroid. The main interest is to investigate the inner region of the so called $\alpha$-disk. We found that the change in eccentricity of the compact object influence the spectra emitted from the accretion disk. This can be observational evidence for the existance of the quark stars. Analytical calculations are mainly done in the radiation pressure dominated region of the accretion disk. The numerical work has been carried out to see the time evolution of the accretion disk around quark stars and white dwarfs using the same potential for Maclaurin spheroids. We showed that if the eccentricity of the object is high the matter will diffuse slowly and advect rapidly during its evolution. This gives a clue that how spin up or spin down can change the time evolution of the accretion disk using a very simple Newtonian approach.  
+We studied semi-analytically and numerically the geometrically thin and optically thick accretion disk. The central object is a rapidly rotating quark star or white dwarf. We used potential for central object as Maclaurin spheroid potential. The main interest is to investigate the inner region of the so called alpha-disk, alpha being the viscosity parameter. Analytical calculations are mainly done in the radiation pressure dominated region of the accretion disk. The numerical work has been carried out to see the time evolution of the accretion disk around quark stars and white dwarfs using the same potential for Maclaurin spheroids. We found that the change in eccentricity of the compact object influence the spectra emitted from the accretion disk. This can be observational evidence for the existance of the quark stars. We showed that if the eccentricity of the object is high the matter will diffuse slowly and advect rapidly during its evolution. This gives a clue that how spin up or spin down can change the time evolution of the accretion disk using a very simple Newtonian approach.  
 \end{abstract}
 %--------------------------------------------------------------------
 \begin{keywords}
@@ -42,7 +42,7 @@ The article is organized in the following manner. In \S 2 we described physical 
 \item Describe in very brief the basics and how $\Omega$ is obtained
   and re-draw the plot that is in your supervisor paper. 
 \end{itemize}
-In general the accretion disk has been studied for the potential due to spherically symmetric objects which corresponds to Keplerian velocity. We are using potential for the Maclaurin spheroids which corresponds to angular velocity which is non-Keplerian in the inner region of the disk. The detailed description of the angular velocity has been studied by Kluzniak et al 2013. The angular velocity on the equatorial plane at a radial distance $r$ from the center of a spheroidal quark star or white dwarf with eccentricity $e$ and semi-major axis $a$ is given by Eqn.~\ref{omega}. The non-Keplerian angular velocity reduces to Keplerian in two extreme cases one for $e\rightarrow 0$ and other for $r\rightarrow \infty$. This is also one reason we are more interested in the inner region of the accretion disk, which is also radiation pressure dominated region according to SS73 model.
+In general the accretion disk has been studied for the potential due to spherically symmetric objects which corresponds to Keplerian velocity. We are using potential for the Maclaurin spheroids which corresponds to angular velocity which is non-Keplerian in the inner region of the disk. The detailed description of the angular velocity has been studied by Kluzniak et al 2013. The angular velocity on the equatorial plane at a radial distance $r$ from the center of a spheroidal quark star or white dwarf with eccentricity $e$ and semi-major axis $a$ is given by Eqn.~\ref{omega}. The non-Keplerian angular velocity reduces to Keplerian in two extreme cases one for $e\rightarrow 0$ and other for $r\rightarrow \infty$. This is also one reason we are more interested in the inner region of the accretion disk, which is also radiation pressure dominated region according to SS73 model. \textbf{Fig~\ref{omega} shows the non-Keplerian angular velocity profile. The higher eccentricity has lower angular velocity at the same radial distance. This dependence of angular velocity on eccentricity will have a direct impact on the evolution of the accretion disk.}
 \begin{figure}
 \centering
 \includegraphics[width=1\columnwidth]{\figpath/angular.eps}
@@ -53,7 +53,7 @@ In general the accretion disk has been studied for the potential due to spherica
 \Omega ^2 \left(R\right)= 2\pi G\rho_* \frac{(1-e^2)^{1/2}}{e^3}\left[\gamma - \cos \gamma \sin\gamma \right]
 \label{omega}
 \end{equation}  
-where $\gamma = \arcsin (\frac{a e}{r})$ and $\rho * = const$ is density of star. Now we have angular velocity of the matter for chosen potential, next goal is to adopt SS73 disk model and redo whole calculations for angular velocity calculated in Eqn.~\ref{omega}.
+where $\gamma = \arcsin (\frac{a e}{r})$ and $\rho_* =$const is density of star. Now we have angular velocity of the matter for chosen potential, next goal is to adopt SS73 disk model and redo whole calculations for angular velocity calculated in Eqn.~\ref{omega}.
 %-------------------------------------------------------------------
 \subsection{Steady thin accretion disk}
 \begin{itemize}
@@ -65,10 +65,19 @@ where $\gamma = \arcsin (\frac{a e}{r})$ and $\rho * = const$ is density of star
   Explicit formulae and quantities shall be discussed in results
   section.
 \end{itemize}
-Now we can use Eqn.~\ref{omega} and follow exactly same steps as SS73, to calculate analytically at three different regions of the accretion disk. Our main concern here will be inner region, which is radiation pressure dominated region. We shall present all the equations and algebraic parameters in the second and third regions also but since we know that at large radii our results reduce to Newtonian results we shall investigate inner region only in detail.
+\textbf{The main interest to study the steady-state disk is to see the behavior of disk parameters and spectra. To proceed the calculations for steady-state disk we can use Eqn.~\ref{omega}} \textbf{and Eqn.~\ref{angmom}} to calculate analytically the three different regions of the accretion disk. Our main concern here will be inner region, which is radiation pressure dominated region. We shall present all the equations and algebraic parameters in the second and third regions also but since we know that at large radii our results reduce to Newtonian results we shall investigate inner region only in detail.
+\textbf{
+\begin{equation}
+\frac{\Sigma d\Omega r^2}{dt} = \frac{1}{r}\frac{d}{dr}W_{r\phi}r^2
+\label{angmom}
+\end{equation}
+where $W_{r\phi}$ is the stress between adjacent layers (SS73).
+\begin{equation}
+W_{r\phi} = -\alpha\Sigma v_s^2
+\end{equation}}
 %----------------------------------------------------------------
 \subsubsection{Radiation pressure dominated region}
-SS73 considered three different regions in the accretion disk, the inner one is radiation pressure dominated where in the interaction of matter and radiation electron scattering on free electrons has dominating contribution. Fig.~\ref{prpg} confirms that our results are in the region where radiation pressure dominates over the gas pressure. We shall directly write the final form of the algebraic equations to calculate the different parameters in the different regions of the disk (SS73).
+SS73 considered three different regions in the accretion disk, the inner one is radiation pressure dominated where in the interaction of matter and radiation electron scattering on free electrons has dominating contribution. \textbf{Fig.~\ref{prpg} verifies our claim that we are studying the inner radiation pressure dominated region}. We shall directly write the final form of the algebraic equations to calculate the different parameters in the different regions of the disk (SS73).
 \begin{equation}
 z_0(r) = \frac{\sigma\rho_0\dot{M}k_1\left(p_1^{1/2}r^2 - p_2^{1/2}R_0^2\right)(ae)^3}{8\pi r^5 c \rho \Omega^2\cos\gamma(\gamma - \sin\gamma\cos\gamma)^{1/2}}.
 \end{equation}
@@ -160,7 +169,7 @@ is the energy flux radiated from unit surface of disk in unit time and rest of t
 \item List formulae and refer the paper that we have been using for
   evolution of Surface density. 
 \end{itemize}
-The disk may not be stationary due to viscous forces acting to transport the angular momentum and cause the accretion of the matter. Here we numerically studied the time evolution of the thin accretion disk around quark stars. We shall integrate numerically the diffusion equation with constant viscosity. We used Crank-Nicolson method which is re-described in Brensteil et al 2010 to solve the linear diffusion equation. One can also solve the same equation using Green's function but the expressions in case of Maclaurin spheroid potential are not trivial to handle analytically. For the potential we adapted from Maclaurin spheroids gives the different angular velocity profile so we shall write the diffusion equation in terms of angular velocity. This set of equations can be fed with any form of potential or angular velocity.
+The \textbf{accretion disk involves viscous forces acting to transport the angular momentum and cause the accretion of the matter. In this model we numerically studied the time evolution of the thin accretion disk around quark stars}. We shall integrate numerically the diffusion equation with constant viscosity. We used Crank-Nicolson method which is re-described in Brensteil et al 2010 to solve the linear diffusion equation. One can also solve the same equation using Green's function but the expressions in case of Maclaurin spheroid potential are not trivial to handle analytically. For the potential we adapted from Maclaurin spheroids gives the different angular velocity profile so we shall write the diffusion equation in terms of angular velocity. This set of equations can be fed with any form of potential or angular velocity.
 \begin{equation}
 \frac{\partial\Sigma}{\partial t} = -\frac{1}{r}\frac{\partial}{\partial r}\left[\frac{1}{2\pi(r^2\Omega)^\prime}\frac{\partial G}{\partial r}\right]
 \label{diffusion}
@@ -229,7 +238,7 @@ using Eqn.~\ref{T1} we computed flux emitted from accretion disk by integrating 
 F(\nu) = \frac{2\pi}{D^2}\int^{R_{out}}_{R_{in}}I(\nu)rdr
 \label{flux}
 \end{equation}
-the numerical integration of Eqn.~\ref{flux} gives emitted spectra from the disk (Fig.~\ref{spectra}). We chose outer radii $R_{out} = 10a$ and $R_{out} = 100a$ in Fig.~\ref{spectra} to see the behavior of the emitted spectra for different eccentricity of the quark star. We see clearly that a change in outer radii $R_{out}$ of the disk changes the emitted spectra at lower frequency while change in eccentricity which corresponds to change in inner radii $R_{in}$ of the accretion disk causes a very minor change in emitted spectra at high frequency. There is also a very minor difference across the whole range of the emitted spectra for different eccentricities. At $h\nu/kT = 10$ curves for $e = 0.83$, $R_{out} = 100a$ and $e = 0.5$, $R_{out} = 10a$ have the same value of emitted flux. Therefore a change in eccentricity of the accreting source do not has a significant change in the emitted spectra of the accretion disk.
+the numerical integration of Eqn.~\ref{flux} gives emitted spectra from the disk (Fig.~\ref{spectra}). We chose outer radii $R_{out} = 10a$ and $R_{out} = 100a$ in Fig.~\ref{spectra} to see the behavior of the emitted spectra for different eccentricity of the quark star. We see clearly that a change in outer radii $R_{out}$ of the disk changes the emitted spectra at lower frequency while change in eccentricity which corresponds to change in inner radii $R_{in}$ of the accretion disk causes a very minor change in emitted spectra at high frequency. There is also a very minor difference across the whole range of the emitted spectra for different eccentricities. At $h\nu/kT = 10$ curves for $e = 0.83$, $R_{out} = 100a$ and $e = 0.5$, $R_{out} = 10a$ have the same value of emitted flux. Therefore a change in eccentricity of the accreting source do not have a significant change in the emitted spectra of the accretion disk.
 \begin{figure}
 \centering
 \includegraphics[width=1\columnwidth]{\figpath/pradpgas.eps}
@@ -254,7 +263,7 @@ the numerical integration of Eqn.~\ref{flux} gives emitted spectra from the disk
 \end{itemize}
 We shall use the physical model of \S2.3 for non-stationary disk and numerically solve Eqn.~\ref{diffusion} and Eqn.~\ref{velocity} to study the time evolution of the accretion disk in case of non-spherical chosen potential of Maclaurin spheroids. We see from Fig.~\ref{omega} that for higher values of the eccentricity of the accreting quark stars the angular velocity $\omega(r)$ is lower as compare to $\omega(r)$ for lower eccentricity. This also corresponds that if the eccentricity is higher there will be less friction between neighboring rings of the matter in the accretion disk and this will imply slow angular momentum transport outwards and low diffusion of the matter into the accreting source. We chose a Gaussian ring of matter and put it at a radial distance of $r/a = 1.5$ as the initial condition to solve the diffusion equation Eqn.~\ref{diffusion}. In Fig.~\ref{evolve} we plotted the time evolution of surface density scaled with initial surface density. The horizontal axis corresponds to radial distance scaled with semi-major axis of the quark-star. Left panel in Fig.~\ref{evolve} shows the time evolution of the accretion disk for an accreting source with eccentricity $e = 0.83$ and the right panel of Fig.~\ref{evolve} shows the time evolution for eccentricity $e = 0.5$. 
 
-In all the time evolution plots the time is in viscous time scale and the kinematic viscosity coefficient $\nu = 0.01$. We see a clear difference in time evolution of the initial Gaussian ring of matter for different eccentricity in Fig.\ref{evolve}, higher the eccentricity lower the diffusion of the matter and lower the eccentricity higher the diffusion of the matter. Fig.~\ref{evolve1e-4} shows the behavior of the ring of matter we put for very low values of eccentricities. Left panel in Fig.~\ref{evolve1e-4} shows the time evolution of the ring for eccentricity $e = 0.0001$ and the right panel again same as right panel of Fig.~\ref{evolve} for eccentricity $e = 0.5$. From Fig.~\ref{evolve} and Fig.~\ref{evolve1e-4} we can conclude that higher eccentricity of accreting source can slow the accretion process and low eccentricity of accreting source can push the matter much easily into the accreting source like black holes discussed in Lynden-Bell and Pringle (1974).  
+In all the time evolution plots the time is in viscous time scale and the kinematic viscosity coefficient $\nu = 0.01$. We see a clear difference in time evolution of the initial Gaussian ring of matter for different eccentricity in Fig.\ref{evolve}, higher the eccentricity lower the diffusion \textbf{follows an inverse law with the eccentricity $e$}. Fig.~\ref{evolve1e-4} shows the behavior of the ring of matter we put for very low values of eccentricities. Left panel in Fig.~\ref{evolve1e-4} shows the time evolution of the ring for eccentricity $e = 0.0001$ and the right panel again same as right panel of Fig.~\ref{evolve} for eccentricity $e = 0.5$. From Fig.~\ref{evolve} and Fig.~\ref{evolve1e-4} we can conclude that higher eccentricity of accreting source can slow the accretion process and low eccentricity of accreting source can push the matter much easily into the accreting source like black holes discussed in Lynden-Bell and Pringle (1974).  
 \begin{figure}
 \centering
 \includegraphics[width=1\columnwidth]{\figpath/nu1e-4.eps}
